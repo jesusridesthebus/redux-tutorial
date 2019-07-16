@@ -29,12 +29,12 @@ const updateUserAction = {
   payload: {
     user: 'John'
   }
-}
+};
 
 store.dispatch(updateUserAction);
 ReactDOM.render(
   <Provider store={store}>
-  <App />
+  <App aRandomProps="whatever" />
   </Provider>,
   document.getElementById('root'));
 
